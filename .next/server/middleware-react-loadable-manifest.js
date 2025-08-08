@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"app\\\\dashboard\\\\analytics\\\\page.tsx -> recharts\":{\"id\":\"app\\\\dashboard\\\\analytics\\\\page.tsx -> recharts\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_recharts_es6_index_js.js\"]},\"app\\\\dashboard\\\\calendar\\\\page.tsx -> react-calendar-heatmap\":{\"id\":\"app\\\\dashboard\\\\calendar\\\\page.tsx -> react-calendar-heatmap\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_react-calendar-heatmap_dist_react-calendar-heatmap_umd_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{}"
