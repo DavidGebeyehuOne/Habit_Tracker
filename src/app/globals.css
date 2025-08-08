@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 25 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 15%;
+    --primary: 25 50% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 20% 95%;
+    --secondary-foreground: 25 15% 15%;
+    --muted: 25 15% 95%;
+    --muted-foreground: 25 10% 40%
+    --accent: 25 30% 90%;
+    --accent-foreground: 25 15% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 25 20% 85%;
+    --input: 25 20% 85%;
+    --ring: 25 50% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 25 15% 8%;
+    --foreground: 25 10% 90%;
+    --card: 25 15% 12%;
+    --card-foreground: 25 10% 90%;
+    --popover: 25 15% 12%;
+    --popover-foreground: 25 10% 90%;
+    --primary: 25 45% 55%;
+    --primary-foreground: 25 15% 8%;
+    --secondary: 25 20% 15%;
+    --secondary-foreground: 25 10% 90%;
+    --muted: 25 20% 15%;
+    --muted-foreground: 25 10% 60%;
+    --accent: 25 25% 20%;
+    --accent-foreground: 25 10% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 25 10% 90%;
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 25 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .habit-card {
+    @apply bg-card border border-border rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .streak-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200;
+  }
+  
+  .completion-rate {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-200;
+  }
+
+  /* Professional dashboard animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .gradient-border {
+    background: linear-gradient(45deg, #d97706, #ea580c, #dc2626);
+    padding: 2px;
+    border-radius: 12px;
+  }
+
+  .gradient-border > * {
+    background: white;
+    border-radius: 10px;
+  }
+
+  .dark .gradient-border > * {
+    background: #1c1917;
+  }
+
+  /* Enhanced card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply transform -translate-y-1 shadow-xl;
+  }
+
+  /* Professional button styles */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-glass {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(217, 119, 6, 0.6);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.8);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/40;
+}
+
+/* Heatmap styles */
+.react-calendar-heatmap .color-scale-1 { fill: #fefefe; }
+.react-calendar-heatmap .color-scale-2 { fill: #fef3c7; }
+.react-calendar-heatmap .color-scale-3 { fill: #fbbf24; }
+.react-calendar-heatmap .color-scale-4 { fill: #f59e0b; }
+.react-calendar-heatmap .color-scale-5 { fill: #d97706; }
+
+.dark .react-calendar-heatmap .color-scale-1 { fill: #1c1917; }
+.dark .react-calendar-heatmap .color-scale-2 { fill: #451a03; }
+.dark .react-calendar-heatmap .color-scale-3 { fill: #78350f; }
+.dark .react-calendar-heatmap .color-scale-4 { fill: #92400e; }
+.dark .react-calendar-heatmap .color-scale-5 { fill: #a16207; } 

@@ -1,0 +1,88 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Simple gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b4513" />
+      <stop offset="50%" style="stop-color:#a0522d" />
+      <stop offset="100%" style="stop-color:#cd853f" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d2691e" />
+      <stop offset="100%" style="stop-color:#b8860b" />
+    </linearGradient>
+    
+    <linearGradient id="successGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#228b22" />
+      <stop offset="100%" style="stop-color:#32cd32" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700" />
+      <stop offset="100%" style="stop-color:#daa520" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1200" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Large central circle -->
+  <circle cx="600" cy="300" r="150" fill="white" opacity="0.2" stroke="white" stroke-width="3"/>
+  
+  <!-- Habit icons in a circle -->
+  <!-- Exercise -->
+  <circle cx="500" cy="200" r="40" fill="url(#successGradient)"/>
+  <text x="500" y="210" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="30">🏃</text>
+  
+  <!-- Reading -->
+  <circle cx="700" cy="200" r="40" fill="url(#accentGradient)"/>
+  <text x="700" y="210" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="30">📖</text>
+  
+  <!-- Meditation -->
+  <circle cx="700" cy="400" r="40" fill="url(#goldGradient)"/>
+  <text x="700" y="410" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="30">🧘</text>
+  
+  <!-- Water -->
+  <circle cx="500" cy="400" r="40" fill="url(#successGradient)"/>
+  <text x="500" y="410" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="30">💧</text>
+  
+  <!-- Center trophy -->
+  <circle cx="600" cy="300" r="50" fill="url(#goldGradient)"/>
+  <text x="600" y="315" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="40">🏆</text>
+  
+  <!-- Connecting lines -->
+  <line x1="500" y1="200" x2="700" y2="200" stroke="white" stroke-width="4" opacity="0.6"/>
+  <line x1="700" y1="200" x2="700" y2="400" stroke="white" stroke-width="4" opacity="0.6"/>
+  <line x1="700" y1="400" x2="500" y2="400" stroke="white" stroke-width="4" opacity="0.6"/>
+  <line x1="500" y1="400" x2="500" y2="200" stroke="white" stroke-width="4" opacity="0.6"/>
+  
+  <!-- Progress checkmarks -->
+  <circle cx="200" cy="150" r="25" fill="url(#successGradient)"/>
+  <text x="200" y="160" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">✓</text>
+  
+  <circle cx="1000" cy="150" r="25" fill="url(#accentGradient)"/>
+  <text x="1000" y="160" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">✓</text>
+  
+  <circle cx="200" cy="450" r="25" fill="url(#goldGradient)"/>
+  <text x="200" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">✓</text>
+  
+  <circle cx="1000" cy="450" r="25" fill="url(#successGradient)"/>
+  <text x="1000" y="460" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">✓</text>
+  
+  <!-- Growth arrow -->
+  <path d="M580 500 L600 470 L620 500" stroke="url(#goldGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="600" y1="470" x2="600" y2="430" stroke="url(#goldGradient)" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Main title -->
+  <text x="600" y="100" text-anchor="middle" fill="white" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700">Habit Tracker</text>
+  <text x="600" y="140" text-anchor="middle" fill="white" font-family="'Segoe UI', Arial, sans-serif" font-size="24" opacity="0.9">Transform Your Daily Routines</text>
+  
+  <!-- Bottom text -->
+  <text x="600" y="550" text-anchor="middle" fill="white" font-family="'Segoe UI', Arial, sans-serif" font-size="18" opacity="0.8">Build Better Habits • Track Progress • Achieve Goals</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="100" r="8" fill="white" opacity="0.6"/>
+  <circle cx="1050" cy="100" r="8" fill="white" opacity="0.6"/>
+  <circle cx="150" cy="500" r="8" fill="white" opacity="0.6"/>
+  <circle cx="1050" cy="500" r="8" fill="white" opacity="0.6"/>
+</svg> 
